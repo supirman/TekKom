@@ -116,7 +116,7 @@ def read_encoded(file_obj):
     """Reads a file compressed by huffman algorithm."""
     
     content = [ch for line in file_obj for ch in line]
-    print "c"
+
 
     bstr = dec2bin(struct.unpack('%dB' % len(content), ''.join(content)))
     bstr = bstr[:-8 -int(bstr[-8:], 2)] # remove end code and extra bits

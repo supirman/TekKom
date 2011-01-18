@@ -68,7 +68,7 @@ if __name__ == "__main__":
         exit()
 
     # Encode/Decode specified file
-    print "image",image
+    
     ar = arcode.ArithmeticCode(use_static_model) if not image else arcodeImage.ArithmeticCodeImage()
 
     if encode:
